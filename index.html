@@ -465,16 +465,14 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                                                          class="w-100">
                                                 </div>
                                                 <div class="carousel-item active">
-                                                    <iframe width="560" height="315"
-                                                            src="https://www.youtube.com/embed/QEWrxA5-xE4?si=ChbERS_eTEwNdihV"
-                                                            title="YouTube video player" frameborder="0"
-                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                            allowfullscreen></iframe>
-                                                    <!--                                                        <video controls class="w-100">-->
-                                                    <!--                                                            <source src="resources\videos\gkebooks\gkebooks.mp4" type="video/mp4">-->
-                                                    <!--&lt;!&ndash;                                                             <source src="movie.ogg" type="video/ogg"> &ndash;&gt;-->
-                                                    <!--&lt;!&ndash;                                                             Your browser does not support the video tag. &ndash;&gt;-->
-                                                    <!--                                                        </video>-->
+<!--                                                    <iframe width="560" height="315"-->
+<!--                                                            src="https://www.youtube.com/embed/QEWrxA5-xE4?si=ChbERS_eTEwNdihV"-->
+<!--                                                            title="YouTube video player" frameborder="0"-->
+<!--                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"-->
+<!--                                                            allowfullscreen></iframe>-->
+                                                    <video controls class="w-100">
+                                                        <source src="https://github.com/ngqbac/Portfolio/blob/main/resources/videos/gkebooks/gkebooks.mp4" type="video/mp4">
+                                                    </video>
                                                 </div>
                                             </div>
                                             <!-- Carousel controls -->
@@ -1596,7 +1594,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                 timelines.each(function () {
                     var timeline = $(this),
                         timelineComponents = {};
-                    //cache timeline components 
+                    //cache timeline components
                     timelineComponents['timelineWrapper'] = timeline.find('.events-wrapper');
                     timelineComponents['eventsWrapper'] = timelineComponents['timelineWrapper'].children('.events');
                     timelineComponents['fillingLine'] = timelineComponents['eventsWrapper'].children('.filling-line');
@@ -1658,7 +1656,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                 //retrieve translateX value of timelineComponents['eventsWrapper']
                 var translateValue = getTranslateValue(timelineComponents['eventsWrapper']),
                     wrapperWidth = Number(timelineComponents['timelineWrapper'].css('width').replace('px', ''));
-                //translate the timeline to the left('next')/right('prev') 
+                //translate the timeline to the left('next')/right('prev')
                 (string == 'next') ?
                     translateTimeline(timelineComponents, translateValue - wrapperWidth + eventsMinDistance, wrapperWidth - timelineTotWidth) : translateTimeline(timelineComponents, translateValue + wrapperWidth - eventsMinDistance);
             }
