@@ -1,7 +1,37 @@
 /*GENERAL STYLE*/
 
+@font-face {
+    font-family: 'Aileron-Heavy';
+    src: url('../font/Aileron-Heavy.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Aileron-Regular';
+    src: url('../font/Aileron-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Aileron-Black';
+    src: url('../font/Aileron-Black.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Aileron-SemiBold';
+    src: url('../font/Aileron-SemiBold.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Aileron-Bold';
+    src: url('../font/Aileron-Bold.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('../font/Anton-Regular.ttf') format("truetype");
+}
+
 body {
-    font-family: 'Aileron', serif;
+    font-family: 'Aileron-Regular', serif;
     padding-top: 54px;
     /*color: #868e96;*/
 }
@@ -19,11 +49,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Aileron', serif;
+    font-family: 'Aileron-Regular';
     font-weight: 700;
     text-transform: uppercase;
     color: #343a40;
 }
+
 
 h1 {
     font-size: 6rem;
@@ -47,7 +78,7 @@ a:active {
 .subheading {
     text-transform: uppercase;
     font-weight: 500;
-    font-family: 'Aileron', serif;
+    font-family: 'Aileron-Regular';
     font-size: 1.35rem;
 }
 
@@ -747,7 +778,7 @@ section.resume-section .resume-item .resume-date {
     border-radius: 50%;
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
     #contact-p2 .con-form input {
         margin-bottom: 30px;
     }
@@ -798,16 +829,14 @@ section.resume-section .resume-item .resume-date {
 }
 
 a.nav-link.js-scroll-trigger {
-    color: rgba(255, 255, 255, .5) !important;
+    color: #4F8FBF !important;
 }
 
 a.nav-link.js-scroll-trigger.active {
-    font-weight: bold !important;
-    color: white !important
+    color: #2264BE !important;
 }
 
 .timeline {
-    /*display: flex;*/
     margin: auto;
     justify-content: center;
 }
@@ -1306,7 +1335,7 @@ a.nav-link.js-scroll-trigger.active {
     animation-direction: reverse;
 }
 
-#product .cd-horizontal-timeline .events-content li>* {
+#product .cd-horizontal-timeline .events-content li > * {
     max-width: 800px;
     margin: 0 auto;
 }
