@@ -28,9 +28,6 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     <link href="css/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body id="page-top">
@@ -58,23 +55,14 @@ License URL: https://creativecommons.org/licenses/by/4.0/
             </li>
             <li class="nav-item">
                 <a class="nav-link"
-                   id="headingAbout"
+                   id="headingOne"
                    style="color: #4F8FBF !important; font-family: Aileron-Black,serif"
                    data-toggle="collapse"
-                   href="#collapseAbout"
+                   href="#collapseExample"
                    role="button"
                    aria-expanded="false"
-                   aria-controls="collapseAbout"
-                   data-parent="#navbarSupportedContent">About</a>
-<!--                <a class="nav-link"-->
-<!--                   id="headingAbout"-->
-<!--                   style="color: #4F8FBF !important; font-family: Aileron-Black,serif"-->
-<!--                   data-toggle="collapse"-->
-<!--                   href="#collapseAbout"-->
-<!--                   role="button"-->
-<!--                   aria-expanded="false"-->
-<!--                   aria-controls="collapseExample">About</a>-->
-                <div class="collapse show" id="collapseAbout">
+                   aria-controls="collapseExample">About</a>
+                <div class="collapse show" id="collapseExample">
                     <div class="card card-body text-left"
                          style="color: #2264BE !important; background: #fff0; border: 2px solid #F1EFE8; border-radius: 15px;">
                         <p style="font-family: Aileron-Bold, serif">
@@ -99,26 +87,14 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                 </div>
             </li>
             <li class="nav-item">
-
                 <a class="nav-link"
-                   id="headingSkills"
                    style="color: #4F8FBF !important; font-family: Aileron-Black,serif"
                    data-toggle="collapse"
-                   href="#collapseSkills"
+                   href="#collapseExample2"
                    role="button"
                    aria-expanded="false"
-                   aria-controls="collapseSkills"
-                   data-parent="#navbarSupportedContent">Skills</a>
-
-<!--                <a class="nav-link"-->
-<!--                   id="headingSkills"-->
-<!--                   style="color: #4F8FBF !important; font-family: Aileron-Black,serif"-->
-<!--                   data-toggle="collapse"-->
-<!--                   href="#collapseSkills"-->
-<!--                   role="button"-->
-<!--                   aria-expanded="false"-->
-<!--                   aria-controls="collapseExample">Skills</a>-->
-                <div class="collapse" id="collapseSkills">
+                   aria-controls="collapseExample">Skills</a>
+                <div class="collapse" id="collapseExample2">
                     <div class="card card-body text-left"
                          style="color: #2264BE !important;background: #fff0;border: 2px solid #F1EFE8;border-radius: 15px;display: inline-block; padding: 10px">
                         <span class="py-1 px-2 "
@@ -1567,7 +1543,6 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 <script src="js/custom.js"></script>
 <script>
     $(document).ready(function () {
-
         $(".filter-b").click(function () {
             var value = $(this).attr('data-filter');
             if (value == "all") {
@@ -1863,34 +1838,6 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     });
 </script>
 <script async src="https://www.tiktok.com/embed.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const headingAbout = document.getElementById('headingAbout');
-        const headingSkills = document.getElementById('headingSkills');
-        const collapseAbout = document.getElementById('collapseAbout');
-        const collapseSkills = document.getElementById('collapseSkills');
-
-        headingAbout.addEventListener('click', function () {
-            console.log("About: " +collapseAbout.classList.contains('show'))
-            if (collapseAbout.classList.contains('show')) {
-                collapseAbout.classList.remove('show');
-            } else {
-                collapseAbout.classList.add('show');
-                collapseSkills.classList.remove('show');
-            }
-        });
-
-        headingSkills.addEventListener('click', function () {
-            console.log("Skill: " +collapseSkills.classList.contains('show'))
-            if (collapseSkills.classList.contains('show')) {
-                collapseSkills.classList.remove('show');
-            } else {
-                collapseSkills.classList.add('show');
-                collapseAbout.classList.remove('show');
-            }
-        });
-    });
-</script>
 <script>
     AOS.init();
 </script>
